@@ -9,6 +9,8 @@
 <h2>Write-up</h2>
 
 <h3>Javascript</h3>
+<b>Characters:</b> 76
+
 
 ```javascript
 for(let i=1;i<101;i++){for(let j=1;j<101;j++)if(i%j==0)write(j+" ");print()}
@@ -32,6 +34,8 @@ for (let i = 1; i < 101; i++) {
 The print statement at the end of the outer for loop is to skip a line. We wrote (j + " ") to add a space between each divisor.
 
 <h3>Python</h3>
+<b>Characters:</b> 80
+
 
 ```python
 for i in range(1,101):
