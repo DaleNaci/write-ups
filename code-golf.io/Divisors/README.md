@@ -18,8 +18,10 @@ for(let i=1;i<101;i++){for(let j=1;j<101;j++)if(i%j==0)write(j+" ");print()}
 <b>Ungolfed:</b>
 
 ```javascript
-for (let i = 1; i < 101; i++) {
-	for (let j = 1; j < 101; j++) {
+for (let i = 1; i < 101; i++)
+{
+	for (let j = 1; j < 101; j++)
+	{
 		if (i % j == 0)
 			write(j + " ");
 	}
