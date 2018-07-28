@@ -1,6 +1,6 @@
 <h1>Divisors</h1>
 <b>Category:</b> Easy
-<br>
+<br><br>
 
 > A number is a divisor of another number if it can divide into it with no remainder.
 > 
