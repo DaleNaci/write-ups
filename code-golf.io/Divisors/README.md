@@ -8,8 +8,7 @@
 
 <h2>Write-up</h2>
 
-<h3>Javascript</h3>
-<b>Characters:</b> 76
+<h3>Javascript, 76 bytes</h3>
 
 
 ```javascript
@@ -33,8 +32,7 @@ for (let i = 1; i < 101; i++) {
 
 The print statement at the end of the outer for loop is to skip a line. We wrote (j + " ") to add a space between each divisor.
 
-<h3>Python</h3>
-<b>Characters:</b> 80
+<h3>Python, 80 bytes</h3>
 
 
 ```python
