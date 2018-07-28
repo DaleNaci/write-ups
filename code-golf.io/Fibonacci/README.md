@@ -2,7 +2,7 @@
 <b>Category:</b> Easy
 <br><br>
 
-> Print the first <b>31</ Fibonacci numbers from <b>F0 = 0</b> to <b>F30 = 832040</b> (inclusive), each on a separate line.
+> Print the first <b>31</b> Fibonacci numbers from <b>F0 = 0</b> to <b>F30 = 832040</b> (inclusive), each on a separate line.
 
 <h2>Write-up</h2>
 
