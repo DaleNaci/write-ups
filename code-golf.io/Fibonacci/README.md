@@ -76,4 +76,4 @@ for (let i = 0; i < 29; i++)
 }
 ```
 
-This is similar to the Python program with the for loop, but we have to use a `temp` variable and perform a triple swap instead.
+This is similar to the Python program with the for loop, but we have to use a `temp` variable and perform a triple swap instead. We also added an extra print statement at the beginning because of the limits of our program.
