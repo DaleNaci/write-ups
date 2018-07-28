@@ -11,13 +11,13 @@
 <h3>Javascript, 76 bytes</h3>
 
 
-```javascript
+```Javascript
 for(let i=1;i<101;i++){for(let j=1;j<101;j++)if(i%j==0)write(j+" ");print()}
 ```
 
 <b>Ungolfed:</b>
 
-```javascript
+```Javascript
 for (let i = 1; i < 101; i++)
 {
 	for (let j = 1; j < 101; j++)
@@ -37,14 +37,14 @@ The print statement at the end of the outer for loop is to skip a line. We wrote
 <h3>Python, 80 bytes</h3>
 
 
-```python
+```Python
 for i in range(1,101):
 	[print(j,end=' ')for j in range(1,101)if i%j==0];print()
 ```
 
 <b>Ungolfed:</b>
 
-```python
+```Python
 for i in range(1, 101):
 	for j in range(1,101):
 		if i%j == 0:
