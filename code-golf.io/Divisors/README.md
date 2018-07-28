@@ -30,3 +30,23 @@ for (let i = 1; i < 101; i++) {
 ```
 
 The print statement at the end of the outer for loop is to skip a line. We wrote (j + " ") to add a space between each divisor.
+
+<h3>Python</h3>
+
+```python
+for i in range(1,101):
+	[print(j,end=' ')for j in range(1,101)if i%j==0];print()
+```
+
+
+This Python program uses the same exact logic that the Javascript program uses.
+
+<b>Ungolfed:</b>
+
+```python
+for i in range(1, 101):
+	for j in range(1,101):
+		if i%j == 0:
+			print(j, end=' ')
+	print()
+```
