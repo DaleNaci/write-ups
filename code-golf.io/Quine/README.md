@@ -20,3 +20,4 @@ echo $BASH_COMMAND
 ```
 
 There is a <a href="https://stackoverflow.com/questions/40933213/shortest-non-null-bash-quine">Stack Overflow</a> that provides an immediate answer to the question.
+
