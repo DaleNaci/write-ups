@@ -25,4 +25,6 @@ for ^20 -> $i
 ```
 
 
-This solution uses a factorial-based math formula to print out Pascal's Triangle: `(i!) / (j! * (i - j)!)`. In this formula, `i` is the row, and `j` is how far across each row the program is. For this program, I use nested for loops. The outer one loops through each row, and the inner loop points to the place in each row. 
+This solution uses a factorial-based math formula to print out Pascal's Triangle: `(i!) / (j! * (i - j)!)`. In this formula, `i` is the row, and `j` is how far across each row the program is. For this program, I used nested for loops. The outer one loops through each row, and the inner loop points to the place in each row. I loop through each row `$i+1` times, because for each row there is an extra number, and the outer for loop also increments by 1, but since `$i` starts at 0, I add 1 to it.
+
+The final `say()` is used to skip a line.
