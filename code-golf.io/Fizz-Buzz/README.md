@@ -8,8 +8,6 @@
 
 > For numbers which are multiples of <b>both three and five</b> then print <b>FizzBuzz</b>.
 
-
-
 <h2>Write-up</h2>
 
 <h3>Python, 94 bytes</h3>
