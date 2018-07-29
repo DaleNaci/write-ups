@@ -2,7 +2,9 @@
 <b>Category:</b> Easy
 <br><br>
 
-> Print the first 20 rows of Pascal's triangle.
+> A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output, produce such a program.
+
+> Trailing whitespace is NOT stripped from the output for this hole.
 
 <h3>Quine, 19 bytes</h3>
 
