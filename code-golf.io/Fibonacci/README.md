@@ -20,8 +20,8 @@ for i in[1]*31:print(x);y,x=y+x,y
 x = 0
 y = 1
 for i in [1]*31:
-	print(x)
-	y, x = y + x, y
+    print(x)
+    y, x = y + x, y
 ```
 
 
