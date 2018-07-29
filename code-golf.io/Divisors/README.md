@@ -20,12 +20,12 @@ for(let i=1;i<101;i++){for(let j=1;j<101;j++)if(i%j==0)write(j+" ");print()}
 ```Javascript
 for (let i = 1; i < 101; i++)
 {
-	for (let j = 1; j < 101; j++)
-	{
-		if (i % j == 0)
-			write(j + " ");
-	}
-	print()
+    for (let j = 1; j < 101; j++)
+    {
+        if (i % j == 0)
+            write(j + " ");
+    }
+    print()
 }
 ```
 
@@ -39,17 +39,17 @@ The print statement at the end of the outer for loop is to skip a line. We wrote
 
 ```Python
 for i in range(1,101):
-	[print(j,end=' ')for j in range(1,101)if i%j==0];print()
+    [print(j,end=' ')for j in range(1,101)if i%j==0];print()
 ```
 
 <b>Ungolfed:</b>
 
 ```Python
 for i in range(1, 101):
-	for j in range(1,101):
-		if i%j == 0:
-			print(j, end=' ')
-	print()
+    for j in range(1,101):
+        if i%j == 0:
+            print(j, end=' ')
+    print()
 ```
 
 

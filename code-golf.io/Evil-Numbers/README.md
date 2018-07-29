@@ -13,16 +13,16 @@
 <h3>Python, 58 bytes</h3>
 
 
-```python
+```Python
 [print(i)for i in range(49)if str(bin(i)).count('1')%2==0]
 ```
 
 <b>Ungolfed:</b>
 
-```python
+```Python
 for i in range(49):
-	if str(bin(i)).count('1') % 2 == 0:
-		print(i)
+    if str(bin(i)).count('1') % 2 == 0:
+        print(i)
 ```
 
 

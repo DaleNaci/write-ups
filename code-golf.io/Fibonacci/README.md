@@ -43,11 +43,11 @@ my $f=->$i,$j {$i.say;if $j <832041 {$f($j,$i+$j)}};$f(0,1)
 ```Perl
 my $f = -> $i, $j
 {
-	$i.say;
-	if $j < 832041
-	{
-		$f($j, $i + $j);
-	}
+    $i.say;
+    if $j < 832041
+    {
+        $f($j, $i + $j);
+    }
 };
 $f(0, 1);
 ```
@@ -69,10 +69,10 @@ y = 1;
 print('0\n1');
 for (let i = 0; i < 29; i++)
 {
-	temp = y;
-	y += x;
-	x = temp;
-	print(y);
+    temp = y;
+    y += x;
+    x = temp;
+    print(y);
 }
 ```
 
