@@ -30,7 +30,7 @@ With the largest size 9 tree looking like this:
 
 <h2>Write-up</h2>
 
-<h3>Perl 6, 37 bytes</h3>
+<h3>Python, 92 bytes</h3>
 
 
 ```Python
