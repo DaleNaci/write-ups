@@ -10,13 +10,13 @@
 
 <h2>Write-up</h2>
 
-<h3>Python, 94 bytes</h3>
+<h3>Python, 93 bytes</h3>
 
 
 ```Python
 for i in range(1,101):
     s=''
-    if i%3==0:s+='Fizz'
+    if i%3==0:s='Fizz'
     if i%5==0:s+='Buzz'
     if not s:s=i
     print(s)
@@ -28,7 +28,7 @@ for i in range(1,101):
 for i in range(1,101):
     s=''
     if i % 3 == 0:
-        s += 'Fizz'
+        s = 'Fizz'
     if i % 5 == 0:
         s += 'Buzz'
     if not s:
