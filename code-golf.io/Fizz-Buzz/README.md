@@ -10,6 +10,35 @@
 
 <h2>Write-up</h2>
 
+<h3>Javascript, 90 bytes</h3>
+
+
+```Javascript
+for(var i=1;i<101;i++){var s=''
+if(i%3==0)s='Fizz'
+if(i%5==0)s+='Buzz'
+if(!s)s=i
+print(s)}
+```
+
+<b>Ungolfed:</b>
+
+```Javascript
+for(var i = 1; i < 101; i++)
+{
+    var s = ''
+    if(i % 3 == 0)
+        s = 'Fizz'
+    if(i % 5 == 0)
+        s += 'Buzz'
+    if(!s)
+        s = i
+    print(s)
+}
+```
+
+For this program, I start with a single for loop to loop through 1-100. I use this blank `s` variable so that I don't need a separate if statement for checking if the answer is 'FizzBuzz.' `if (i%3==0)` and `if (i%5==0)` both check if there are multiples of 3 and 5, respectively. Since `i%3` comes before `i%5`, s will correctly be set to 'FizzBuzz' if both are applicable.
+
 <h3>Python, 93 bytes</h3>
 
 
@@ -36,7 +65,7 @@ for i in range(1,101):
     print(s)
 ```
 
-For this program, I start with a single for loop to loop through 1-100. I use this blank `s` variable so that I don't need a separate if statement for checking if the answer is 'FizzBuzz.' `if i%3==0` and `if i%5==0` both check if there are multiples of 3 and 5, respectively. Since `i%3` comes before `i%5`, s will correctly be set to 'FizzBuzz' if both are applicable.
+Same explanation as the Javascript program, but unfortunately contains 3 more characters.
 
 <h3>Perl 6, 101 bytes</h3>
 
