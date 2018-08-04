@@ -122,7 +122,7 @@ for i = 1, 100 do
 end
 ```
 
-
+This solution follows the same exact solution as the Python and Javascript solution, but I had to use `s = ''` in the beginning because of the way Lua handles all integers as true.
 
 
 
