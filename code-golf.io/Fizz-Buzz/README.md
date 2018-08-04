@@ -10,12 +10,12 @@
 
 <h2>Write-up</h2>
 
-<h3>Javascript, 90 bytes</h3>
+<h3>Javascript, 87 bytes</h3>
 
 
 ```Javascript
-for(var i=1;i<101;i++){var s=''
-if(i%3==0)s='Fizz'
+for(var i=1;i<101;i++){var s='Fizz'
+if(i%3)s=''
 if(i%5==0)s+='Buzz'
 if(!s)s=i
 print(s)}
@@ -26,9 +26,9 @@ print(s)}
 ```Javascript
 for(var i = 1; i < 101; i++)
 {
-    var s = ''
-    if(i % 3 == 0)
-        s = 'Fizz'
+    var s = 'Fizz'
+    if(i % 3)
+        s = ''
     if(i % 5 == 0)
         s += 'Buzz'
     if(!s)
@@ -37,27 +37,27 @@ for(var i = 1; i < 101; i++)
 }
 ```
 
-For this program, I start with a single for loop to loop through 1-100. I use this blank `s` variable so that I don't need a separate if statement for checking if the answer is 'FizzBuzz.' `if (i%3==0)` and `if (i%5==0)` both check if there are multiples of 3 and 5, respectively. Since `i%3` comes before `i%5`, s will correctly be set to 'FizzBuzz' if both are applicable.
+For this program, I start with a single for loop to loop through 1-100. I start with s = 'Fizz' instead of s='' so that the first if statement will not need any comparison, because a 0 will automatically entre into false. `if (i%3)` checks if it is a multiple of 3. If it is not, then it will take away 'Fizz' from s. `i%5==0` checks if i is divisible by 5, and will add Buzz to the end of s. Since `i%3` comes before `i%5`, s will correctly be set to 'FizzBuzz' if both are applicable.
 
-<h3>Python, 93 bytes</h3>
+<h3>Python, 90 bytes</h3>
 
 
 ```Python
 for i in range(1,101):
-    s=''
-    if i%3==0:s='Fizz'
-    if i%5==0:s+='Buzz'
-    if not s:s=i
-    print(s)
+	s='Fizz'
+	if i%3:s=''
+	if i%5==0:s+='Buzz'
+	if not s:s=i
+	print(s)
 ```
 
 <b>Ungolfed:</b>
 
 ```Python
 for i in range(1,101):
-    s=''
-    if i % 3 == 0:
-        s = 'Fizz'
+    s='Fizz'
+    if i % 3:
+        s = ''
     if i % 5 == 0:
         s += 'Buzz'
     if not s:
