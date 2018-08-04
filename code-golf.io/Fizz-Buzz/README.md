@@ -122,7 +122,7 @@ for i = 1, 100 do
 end
 ```
 
-This solution follows the same exact solution as the Python and Javascript solution, but I had to use `s = ''` in the beginning because of the way Lua handles all integers as true.
+This solution follows the same exact solution as the Python and Javascript solution, but I had to use `s = ''` in the beginning because of the way Lua handles all integers as true. Lua also allows for you to take away a lot of whitespace, so things like `if i%3==0then` and `s=s.."Buzz"end` saved a lot of characters.
 
 
 
