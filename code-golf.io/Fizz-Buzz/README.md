@@ -97,3 +97,32 @@ for ^100 + 1 -> $i
 ```
 
 This also loops from 1-100. The `if` statements check for divisibility, and the third one prints if both results do not go to 0. The first two `if` statement conditionals serve as double negatives, saying "if i % 3 (or i % 5) is NOT equal to 0".
+
+<h3>Lua, 107 bytes</h3>
+
+```Lua
+for i=1,100 do s='' if i%3==0then s="Fizz"end if i%5==0then s=s.."Buzz"end if s==''then s=i end print(s)end
+```
+
+<b>Ungolfed:</b>
+
+```Lua
+for i = 1, 100 do
+    s = ''
+    if i % 3 == 0 then
+        s = "Fizz"
+    end
+    if i % 5 == 0 then
+        s = s.."Buzz"
+    end
+    if s == '' then
+        s = i
+    end
+    print(s)
+end
+```
+
+
+
+
+
