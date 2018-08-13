@@ -6,28 +6,28 @@
 
 <h2>Write-up</h2>
 
-<h3>Python, 41 bytes</h3>
+<h3>Python, 38 bytes</h3>
 
 
 ```Python
 x,y=0,1
-for i in[1]*31:print(x);y,x=y+x,y
+while y<2e6:print(x);y,x=x+y,y
 ```
 
 <b>Ungolfed:</b>
 
 ```Python
-x = 0
-y = 1
-for i in [1]*31:
+f = 0
+s = 1
+while y < 2e6:
     print(x)
-    y, x = y + x, y
+    y, x = x + y, y
 ```
 
 
-For Fibonacci, I was in a constant battle about whether to use recursion or a for loop. I initially had a 49 byte Python recursion solution, but this for loop solution ended up being a lot quicker. This program uses 2 variables, `x` and `y`. They initially start at `0` and `1`, similar to an actual fibonacci sequence.
+For Fibonacci, I was in a constant battle about whether to use recursion or a for/while loop. I initially had a 49 byte Python recursion solution, but this while loop solution ended up being a lot quicker. This program uses 2 variables, `x` and `y`. They initially start at `0` and `1`, similar to an actual fibonacci sequence.
 
-`for i in[1]*31` is a shorter version of writing range(31), and can be used if you do not actually need `i` for anything. It is looping through a list of 31 1's.
+`while s<2e6` is the shortest version of looping/recursion that I could find. I initially had `for i in[1]*31`, but this while loop shortens this.
 
 I initially had a `temp` variable to make a triple swap, but I just defaulted to that because that's what I use in Java. I later learned that in Python, you can swap the value of two variables using `a,b=b,a`, so I took out my temp variable and used `y,x=y+x,y` instead.
 
@@ -76,4 +76,4 @@ for (let i = 0; i < 29; i++)
 }
 ```
 
-This is similar to the Python program with the for loop, but we have to use a `temp` variable and perform a triple swap instead. We also added an extra print statement at the beginning because of the limits of our program.
+This is similar to the Python program but with a for loop, and we have to use a `temp` variable and perform a triple swap instead. We also added an extra print statement at the beginning because of the limits of our program.
