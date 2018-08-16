@@ -8,22 +8,19 @@
 
 <h2>Write-up</h2>
 
-<h3>Python, 58 bytes</h3>
+<h3>Python, 104 bytes</h3>
 
 
 ```Python
-for i in range(999):
-    x=int(str(i)[::-1])
-    if all(i%j for j in range(2,i))and all(x%j for j in range(2,x))and x!=i:print(i)
+for n in range(999):k=int(str(n)[::-1]);(n-k)*all(n%j*(k%j) for j in range(2,k+n)if k!=j!=n)and print(n)
 ```
 
 <b>Ungolfed:</b>
 
 ```Python
-for i in range(999):
-    x = int(str(i)[::-1])
-    if all(i % j for j in range(2, i)) and all(x % j for j in range(2, x)) and x! = i:
-        print(i)
+for n in range(999):
+    k = int(str(n)[::-1])
+    (n - k) * all(n % j * (k % j) for j in range(2, k + n) if k != j != n) and print(n)
 ```
 
 
