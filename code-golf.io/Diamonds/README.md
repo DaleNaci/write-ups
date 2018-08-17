@@ -60,6 +60,7 @@ for ^9 -> $i
 ```
 
 Diamonds has a relatively large amount of math logic going into it, at least for my solution.
+
 `my $a = &abs;` sets up the abs function to be called when I type $a, saving a few characters since I use absolute value a lot.
 
 `for ^9 -> $i` is a for loop for each diamond, printing 9 in total.
