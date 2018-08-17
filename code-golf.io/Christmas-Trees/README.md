@@ -1,5 +1,5 @@
 <h1>Christmas Trees</h1>
-<b>Category:</b> Easy
+<b>Category:</b> Medium
 <br><br>
 
 > Print a size ascending range of Christmas trees using asterisks, ranging from size 3 to size 9, each tree separated by a blank line.
