@@ -10,6 +10,25 @@
 
 <h2>Write-up</h2>
 
+<h3>Python, 64 bytes</h3>
+
+
+```Python
+for i in range(1,101):print('Fizz'*(i%3==0)+'Buzz'*(i%5==0)or i)
+```
+
+<b>Ungolfed:</b>
+
+```Python
+for i in range(1,101):
+    print('Fizz' * (i % 3 == 0) + 'Buzz' * (i % 5 == 0) or i)
+```
+
+This for loop goes through each of the numbers.
+`'Fizz'*(i%3==0)` will add Fizz to the number if i%3 is NOT equal to 0, because multiplying by true is the same as multiplying by 1. This is the same logic for `'Buzz'*(i%5==0)`.
+The `or i` bit will only print if the first part is `''`.
+
+
 <h3>Javascript, 87 bytes</h3>
 
 
@@ -38,34 +57,6 @@ for(var i = 1; i < 101; i++)
 ```
 
 For this program, I start with a single for loop to loop through 1-100. I start with s = 'Fizz' instead of s='' so that the first if statement will not need any comparison, because a 0 will automatically entre into false. `if (i%3)` checks if it is a multiple of 3. If it is not, then it will take away 'Fizz' from s. `i%5==0` checks if i is divisible by 5, and will add Buzz to the end of s. Since `i%3` comes before `i%5`, s will correctly be set to 'FizzBuzz' if both are applicable.
-
-<h3>Python, 90 bytes</h3>
-
-
-```Python
-for i in range(1,101):
-	s='Fizz'
-	if i%3:s=''
-	if i%5==0:s+='Buzz'
-	if not s:s=i
-	print(s)
-```
-
-<b>Ungolfed:</b>
-
-```Python
-for i in range(1,101):
-    s='Fizz'
-    if i % 3:
-        s = ''
-    if i % 5 == 0:
-        s += 'Buzz'
-    if not s:
-        s = i
-    print(s)
-```
-
-Same explanation as the Javascript program, but unfortunately contains 3 more characters.
 
 <h3>Perl 6, 101 bytes</h3>
 
@@ -122,7 +113,7 @@ for i = 1, 100 do
 end
 ```
 
-This solution follows the same exact solution as the Python and Javascript solution, but I had to use `s = ''` in the beginning because of the way Lua handles all integers as true. Lua also allows for you to take away a lot of whitespace, so things like `if i%3==0then` and `s=s.."Buzz"end` saved a lot of characters.
+This solution follows the same exact solution as the Javascript solution, but I had to use `s = ''` in the beginning because of the way Lua handles all integers as true. Lua also allows for you to take away a lot of whitespace, so things like `if i%3==0then` and `s=s.."Buzz"end` saved a lot of characters.
 
 
 
