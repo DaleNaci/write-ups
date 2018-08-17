@@ -2,9 +2,9 @@
 <b>Category:</b> Easy
 <br><br>
 
-> An emirp (prime spelled backwards) is a prime number that results in a different prime when its decimal digits are reversed. For example both 13 and 31 are emirps.
+> An emirp (prime spelled backwards) is a prime number that results in a different prime when its decimal digits are reversed. For example both <b>13</b> and <b>31</b> are emirps.
 
-> Print all the emirp numbers from 1 to 1000 inclusive, each on their own line.
+> Print all the emirp numbers from <b>1</b> to <b>1000</b> inclusive, each on their own line.
 
 <h2>Write-up</h2>
 
